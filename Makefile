@@ -14,6 +14,10 @@ kubeseal:
 	docker build ./kubeseal -t pnyak/kubeseal
 	docker push pnyak/kubeseal
 
-all: awscli hugo gcloud-kubectl kubeseal
+openssl:
+	docker build ./openssl -t pnyak/openssl
+	docker push pnyak/openssl
 
-.PHONY: awscli hugo gcloud-kubectl kubeseal all
+all: awscli hugo gcloud-kubectl kubeseal openssl
+
+.PHONY: awscli hugo gcloud-kubectl kubeseal  openssl all

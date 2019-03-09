@@ -1,5 +1,5 @@
 FROM alpine:3.9
 
-RUN apk update && apk add --no-cache openssl
+RUN apk update && apk add --no-cache openssl bash
 
 ENTRYPOINT ["openssl"]

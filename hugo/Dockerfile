@@ -1,6 +1,6 @@
-FROM alpine:3.9
+FROM alpine
 
-ENV HUGO_VERSION 0.53
+ENV HUGO_VERSION 0.68.3
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit
 
 RUN wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz -P /tmp/
